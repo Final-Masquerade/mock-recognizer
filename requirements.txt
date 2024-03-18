@@ -1,0 +1,8 @@
+flask
+python-dotenv
+numpy
+opencv-python
+matplotlib
+opencv-contrib-python
+deskew
+pillow

@@ -1,0 +1,2 @@
+start:
+	flask run
