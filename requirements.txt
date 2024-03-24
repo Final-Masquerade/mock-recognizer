@@ -1,8 +1,12 @@
 flask
 python-dotenv
-numpy
+numpy==1.22
 opencv-python
 matplotlib
 opencv-contrib-python
 deskew
 pillow
+oemer[tf]
+tensorflow==2.13.0
+tensorflow-macos
+tensorflow-metal

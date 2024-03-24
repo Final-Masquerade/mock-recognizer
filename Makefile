@@ -1,2 +1,2 @@
 start:
-	flask run
+	python src/app.py
