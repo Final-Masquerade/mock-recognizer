@@ -10,19 +10,20 @@ from mimetypes import guess_type, guess_extension
 import base64
 from typing import Final
 from oemer.ete import extract_inline
+from processing import processing_queue, current_job, failed_jobs, process
 
 load_dotenv()
 
 cwd: Final[str] = os.getcwd()
-
-failed_jobs = []
-processing_queue = []
-
 app = Flask(__name__)
 
 @app.get("/")
 def index():
-    return "Stable."
+    timestamp = round(time()*1000)
+    return Response({
+        "status": "stable",
+        "timestamp": timestamp
+    })
 
 @app.post("/api/recognize")
 def recognize():
@@ -39,6 +40,7 @@ def recognize():
 
     file_type = guess_type(data)[0]
     extension = guess_extension(file_type)
+    if extension == None: extension = ".png"
 
     if len(data.split(",")) > 1: data = data.split(",")[1]
 
@@ -47,25 +49,11 @@ def recognize():
 
     if not os.path.exists(os.path.join(cwd, 'temp')):
         os.mkdir(os.path.join(cwd, 'temp'))
-    
-    if not os.path.exists(os.path.join(cwd, 'out')):
-        os.mkdir(os.path.join(cwd, 'out'))
 
     with open(image_path, "wb") as file: 
         file.write(byte)
 
-    def extract(input_path, output_path):
-        i = input_path.split("/")[-1].split(".")[0]
-        processing_queue.append(i)
-        try: extract_inline(input_path, output_path)
-        except:
-            failed_jobs.append(i)
-        finally: 
-            os.remove(input_path)
-            processing_queue.remove(i)
-
-    recognition_thread = Thread(target=extract, args=(image_path, f"out/{job_id}.musicxml", ))
-    recognition_thread.start()
+    processing_queue.put((job_id, image_path))
 
     return Response({
         "file_type": file_type,
@@ -77,9 +65,10 @@ def recognize():
 @app.get("/api/queue")
 def queue_info():
     return Response({
-        "processing_queue": processing_queue,
+        "current_job": current_job[0] if len(current_job) > 0 else None,
+        "processing_queue": list(map(lambda item: item[0], list(processing_queue.queue))),
         "failed_jobs": failed_jobs,
-        "processing_queue_length": len(processing_queue),
+        "processing_queue_length": processing_queue.qsize(),
         "failed_jobs_length": len(failed_jobs)
     })
 
@@ -91,4 +80,5 @@ def get_from_tray(jobId: str):
 
 
 if __name__ == "__main__":
+    Thread(target=process).start()
     app.run(debug=True)
