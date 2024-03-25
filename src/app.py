@@ -1,15 +1,13 @@
-from dotenv import load_dotenv
 import os
+import base64
+from dotenv import load_dotenv
 from flask import Flask, request, send_file, jsonify, json
-from multiprocessing import process
 from threading import Thread
 from util import Response, Status, decode_base64
 from uuid import uuid4
 from time import time
 from mimetypes import guess_type, guess_extension
-import base64
 from typing import Final
-from oemer.ete import extract_inline
 from processing import processing_queue, current_job, failed_jobs, process
 
 load_dotenv()

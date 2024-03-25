@@ -1,6 +1,6 @@
-from flask import Response as r, json
 import base64
 import re
+from flask import Response as r, json
 from enum import Enum
 
 def Response(data: dict, status: int = 200):
