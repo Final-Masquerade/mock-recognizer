@@ -8,5 +8,4 @@ deskew
 pillow
 oemer[tf]
 tensorflow==2.13.0
-tensorflow-macos
-tensorflow-metal
+# Windows GPU Deps
