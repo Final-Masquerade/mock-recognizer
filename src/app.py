@@ -8,7 +8,7 @@ from uuid import uuid4
 from time import time
 from mimetypes import guess_type, guess_extension
 from typing import Final
-from processing import processing_queue, current_job, failed_jobs, process
+from processing import processing_queue, current_job, process
 
 load_dotenv()
 
@@ -30,8 +30,14 @@ def recognize():
         return Response({
             "message": "`file` field must be provided."
         }, status=400)
+    
+    if not ("user_id" in body):
+        return Response({
+            "message": "`user_id` field must be provided."
+        }, status=400)
 
     data: str = body["file"]
+    user_id: str = body["user_id"]
 
     timestamp = round(time()*1000)
     job_id = f"{uuid4()}_{timestamp}"
@@ -51,7 +57,7 @@ def recognize():
     with open(image_path, "wb") as file: 
         file.write(byte)
 
-    processing_queue.put((job_id, image_path))
+    processing_queue.put((job_id, image_path, user_id))
 
     return Response({
         "file_type": file_type,
@@ -65,15 +71,8 @@ def queue_info():
     return Response({
         "current_job": current_job[0] if len(current_job) > 0 else None,
         "processing_queue": list(map(lambda item: item[0], list(processing_queue.queue))),
-        "failed_jobs": failed_jobs,
         "processing_queue_length": processing_queue.qsize(),
-        "failed_jobs_length": len(failed_jobs)
     })
-
-@app.get("/api/tray/<jobId>")
-def get_from_tray(jobId: str):
-    return "The document."
-
 
 
 
