@@ -15,14 +15,15 @@ def process():
 
         try:
             current_job.append(job_id)
-            xml = extract_inline(image_path, without_deskew=True)
+            xml = extract_inline(image_path)
+
 
             # Success
 
             body = {
                 "user_id": user_id,
                 "job_id": job_id,
-                "xml": xml,
+                "xml": xml.decode("utf-8"),
                 "status": "SUCCESS"
             }
 
