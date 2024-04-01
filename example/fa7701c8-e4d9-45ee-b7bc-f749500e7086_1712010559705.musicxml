@@ -2,10 +2,10 @@
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0">
   <work>
-    <work-title>Fa7701c8-e4d9-45ee-b7bc-f749500e7086_1712010559705</work-title>
+    <work-title>Rondo Alla Turca</work-title>
   </work>
   <identification>
-    <creator type="composer">Transcribed by Oemer</creator>
+    <creator type="composer">W. A. Mozart</creator>
   </identification>
   <part-list>
     <score-part id="P1">
@@ -23,7 +23,7 @@
     </score-part>
   </part-list>
   <part id="P1">
-    <sound tempo="90"/>
+    <sound tempo="90" />
     <measure number="1">
       <attributes>
         <divisions>16</divisions>
@@ -56,7 +56,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -91,7 +91,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -140,7 +140,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>1</staff>
       </note>
@@ -160,7 +160,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -200,7 +200,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -228,7 +228,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -260,7 +260,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -273,7 +273,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -322,7 +322,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>1</staff>
       </note>
@@ -342,7 +342,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -382,7 +382,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -437,7 +437,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -536,7 +536,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -633,7 +633,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -702,7 +702,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -742,7 +742,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -782,7 +782,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -804,7 +804,7 @@
         </pitch>
         <duration>12</duration>
         <type>eighth</type>
-        <dot/>
+        <dot />
         <stem>up</stem>
         <staff>1</staff>
         <voice>1</voice>
@@ -813,9 +813,9 @@
         <duration>12</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>12</duration>
-        <dot/>
+        <dot />
         <staff>2</staff>
       </note>
       <note>
@@ -858,7 +858,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>0</alter>
@@ -886,7 +886,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -911,7 +911,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -939,7 +939,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -964,7 +964,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>0</alter>
@@ -992,7 +992,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -1006,7 +1006,7 @@
       </note>
     </measure>
     <measure number="7">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note>
         <pitch>
           <step>G</step>
@@ -1035,7 +1035,7 @@
         <duration>16</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>16</duration>
         <staff>2</staff>
       </note>
@@ -1079,7 +1079,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -1107,7 +1107,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -1132,7 +1132,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -1160,7 +1160,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>0</alter>
@@ -1185,7 +1185,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -1213,7 +1213,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -1255,7 +1255,7 @@
         <duration>16</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>16</duration>
         <staff>2</staff>
       </note>
@@ -1299,7 +1299,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -1327,7 +1327,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -1352,7 +1352,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -1392,7 +1392,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -1451,7 +1451,7 @@
     </measure>
     <measure number="10">
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -1459,7 +1459,7 @@
         <duration>8</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>1</staff>
       </note>
@@ -1478,7 +1478,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -1494,12 +1494,12 @@
         <duration>8</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -1519,7 +1519,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>0</alter>
@@ -1546,7 +1546,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>0</alter>
@@ -1586,7 +1586,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>0</alter>
@@ -1757,7 +1757,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>16</duration>
         <staff>2</staff>
       </note>
@@ -1777,7 +1777,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -1802,7 +1802,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>0</alter>
@@ -1816,7 +1816,7 @@
       </note>
     </measure>
     <measure number="14">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note>
         <pitch>
           <step>C</step>
@@ -1845,7 +1845,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>0</alter>
@@ -1885,7 +1885,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>0</alter>
@@ -2005,7 +2005,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -2018,7 +2018,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2038,7 +2038,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -2051,7 +2051,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2071,7 +2071,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -2113,7 +2113,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2153,7 +2153,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -2309,7 +2309,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2329,7 +2329,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -2342,7 +2342,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2362,7 +2362,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -2389,7 +2389,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -2429,7 +2429,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2555,7 +2555,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -2598,7 +2598,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2633,7 +2633,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>2</staff>
       </note>
@@ -2654,7 +2654,7 @@
       </note>
     </measure>
     <measure number="20">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note>
         <pitch>
           <step>A</step>
@@ -2683,7 +2683,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>16</duration>
         <staff>1</staff>
       </note>
@@ -2703,7 +2703,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2743,7 +2743,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2771,7 +2771,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -2803,7 +2803,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2816,7 +2816,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -2865,7 +2865,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>8</duration>
         <staff>1</staff>
       </note>
@@ -2885,7 +2885,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2925,7 +2925,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2953,7 +2953,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -2985,7 +2985,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -2998,7 +2998,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -3089,7 +3089,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <alter>0</alter>
@@ -3159,7 +3159,7 @@
         <duration>4</duration>
       </backup>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -3191,7 +3191,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>0</alter>
@@ -3204,7 +3204,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>4</duration>
         <staff>2</staff>
       </note>
@@ -3265,7 +3265,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>D</step>
           <alter>0</alter>
@@ -3305,7 +3305,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>D</step>
           <alter>0</alter>
@@ -3345,7 +3345,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>D</step>
           <alter>0</alter>
@@ -3414,7 +3414,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -3481,7 +3481,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>F</step>
           <alter>0</alter>
@@ -3548,7 +3548,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -3615,7 +3615,7 @@
         <voice>1</voice>
       </note>
       <note>
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <alter>0</alter>
