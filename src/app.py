@@ -1,5 +1,6 @@
 import os
 import base64
+import argparse
 from dotenv import load_dotenv
 from flask import Flask, request, send_file, jsonify, json
 from threading import Thread
@@ -77,5 +78,15 @@ def queue_info():
 
 
 if __name__ == "__main__":
-    Thread(target=process).start()
+    parser = argparse.ArgumentParser("recognizer")
+    parser.add_argument(
+        "--save-on-process", 
+        help="Saves the output as musicxml in the /out folder.", 
+        action="store_true", 
+        default=False
+    )
+    
+    args = parser.parse_args()
+
+    Thread(target=lambda: process(args.save_on_process)).start()
     app.run(debug=True)

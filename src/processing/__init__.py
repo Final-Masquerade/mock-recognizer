@@ -6,7 +6,7 @@ import requests
 current_job = []
 processing_queue = Queue(maxsize=-1)
 
-def process():
+def process(save_on_process=False):
     gateway_host = getenv("GATEWAY_HOST")
     secret = getenv("RECOGNIZER_SECRET")
 
@@ -32,6 +32,12 @@ def process():
                 headers={ "Authorization": secret },
                 json=body)
 
+            if save_on_process:
+                if not path.exists(path.join(getcwd(), 'out')):
+                    mkdir(path.join(getcwd(), 'out'))
+
+                with open(path.join(getcwd(), "out", f"{job_id}.musicxml"), "wb") as file:
+                    file.write(xml)
 
         except Exception as err:
             print(err)
