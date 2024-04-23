@@ -3,7 +3,7 @@ import re
 from flask import Response as r, json
 from enum import Enum
 from music21 import converter, midi
-from os import path, getcwd, mkdir, system
+from os import path, getcwd, mkdir, system, remove
 
 def Response(data: dict, status: int = 200):
     return r(json.dumps(data), status=status)
@@ -33,6 +33,9 @@ def musicxml_to_midi(job_id):
 
     if not path.exists(path.join(getcwd(), 'out', "midi")):
         mkdir(path.join(getcwd(), 'out', "midi"))
+   
+    if not path.exists(path.join(getcwd(), 'out', "pdf")):
+        mkdir(path.join(getcwd(), 'out', "pdf"))
 
     xml_file = path.join(getcwd(), "out", "musicxml", f"{job_id}.musicxml")
     score = converter.parse(xml_file)
@@ -40,6 +43,13 @@ def musicxml_to_midi(job_id):
     midi_file = path.join(getcwd(), "out", "midi", f"{job_id}.mid")
     score.write("midi", midi_file)
 
+    pdf_file = path.join(getcwd(), "out", "pdf", f"{job_id}.pdf")
+
+    try:
+        score.write('musicxml.pdf', pdf_file)
+        remove(path.join(getcwd(), "out", "pdf", f"{job_id}.musicxml"))
+    except:
+        print("Error rendering pdf.")
 
 def midi_to_wav(job_id, soundfont):
     print("Building wav file...")
@@ -51,7 +61,7 @@ def midi_to_wav(job_id, soundfont):
     wav_file = path.join(getcwd(), "out", "wav", f"{job_id}.wav")
 
     try:
-        system(f'fluidsynth -ni {soundfont} {midi_file} -F {wav_file} -r 44100')
+        system(f'fluidsynth -ni {soundfont} {midi_file} -F {wav_file} -r 44100 >> /dev/null')
     except:
         print("Error rendering to wav.")
 

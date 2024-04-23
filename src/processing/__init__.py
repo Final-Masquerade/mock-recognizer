@@ -3,6 +3,7 @@ from queue import Queue
 from oemer.ete import extract_inline
 from util import musicxml_to_midi, midi_to_wav
 import requests
+from music21 import environment
 
 current_job = []
 processing_queue = Queue(maxsize=-1)
@@ -10,6 +11,9 @@ processing_queue = Queue(maxsize=-1)
 def process(save_on_process=False):
     gateway_host = getenv("GATEWAY_HOST")
     secret = getenv("RECOGNIZER_SECRET")
+
+    us = environment.Environment()    
+    us['musescoreDirectPNGPath'] = '/Applications/MuseScore 4.app/Contents/MacOS/mscore'
 
     while True:
         job_id, image_path, user_id = processing_queue.get()
